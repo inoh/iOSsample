@@ -28,12 +28,14 @@
 
 #pragma mark UITableViewDataSource Methods
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
     if (nil == cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
+    NSString *str = [[NSString alloc] initWithFormat:@"Testing %d",indexPath.row];
+    cell.textLabel.text = str;
     return cell;
 }
 
@@ -42,5 +44,10 @@
 }
 
 #pragma mark UITableViewDelegate Methods
+
+- (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tv deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end
