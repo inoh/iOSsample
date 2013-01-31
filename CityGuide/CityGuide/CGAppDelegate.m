@@ -7,16 +7,29 @@
 //
 
 #import "CGAppDelegate.h"
-
 #import "CGViewController.h"
+#import "City.h"
 
 @implementation CGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    City *shimane = [[City alloc] init];
+    shimane.cityName = @"島根";
+    shimane.cityDescription = @"Ruby発祥の地";
+    shimane.cityPicture = [UIImage imageNamed:@"Shimane.jpg"];
+    
+    City *tokyo = [[City alloc] init];
+    tokyo.cityName = @"東京";
+    tokyo.cityDescription = @"日本の都市";
+    tokyo.cityPicture = [UIImage imageNamed:@"Tokyo.jpg"];
+    
+    self.cities = [[NSMutableArray alloc]initWithObjects:shimane, tokyo, nil];
+    
     self.viewController = [[CGViewController alloc] initWithNibName:@"CGViewController" bundle:nil];
+
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
