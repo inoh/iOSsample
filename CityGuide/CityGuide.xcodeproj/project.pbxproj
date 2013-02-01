@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DB1FBB8916BC03B10009BE00 /* Shimane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB1FBB8816BC03B10009BE00 /* Shimane.jpg */; };
 		DB1FBB8B16BC03BE0009BE00 /* Tokyo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB1FBB8A16BC03BE0009BE00 /* Tokyo.jpg */; };
+		DB84675216BC7C6900139D49 /* CityController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB84675016BC7C6900139D49 /* CityController.m */; };
+		DB84675316BC7C6900139D49 /* CityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB84675116BC7C6900139D49 /* CityController.xib */; };
 		DBAC186616BA976A0026A918 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAC186516BA976A0026A918 /* UIKit.framework */; };
 		DBAC186816BA976A0026A918 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAC186716BA976A0026A918 /* Foundation.framework */; };
 		DBAC186A16BA976A0026A918 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAC186916BA976A0026A918 /* CoreGraphics.framework */; };
@@ -26,6 +28,9 @@
 /* Begin PBXFileReference section */
 		DB1FBB8816BC03B10009BE00 /* Shimane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shimane.jpg; sourceTree = "<group>"; };
 		DB1FBB8A16BC03BE0009BE00 /* Tokyo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tokyo.jpg; sourceTree = "<group>"; };
+		DB84674F16BC7C6900139D49 /* CityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityController.h; sourceTree = "<group>"; };
+		DB84675016BC7C6900139D49 /* CityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityController.m; sourceTree = "<group>"; };
+		DB84675116BC7C6900139D49 /* CityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityController.xib; sourceTree = "<group>"; };
 		DBAC186116BA976A0026A918 /* CityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAC186516BA976A0026A918 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DBAC186716BA976A0026A918 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				DBAC187416BA976A0026A918 /* CGAppDelegate.h */,
+				DB84674F16BC7C6900139D49 /* CityController.h */,
+				DB84675016BC7C6900139D49 /* CityController.m */,
+				DB84675116BC7C6900139D49 /* CityController.xib */,
 				DBAC187516BA976A0026A918 /* CGAppDelegate.m */,
 				DBAC187D16BA976A0026A918 /* CGViewController.h */,
 				DBAC187E16BA976A0026A918 /* CGViewController.m */,
@@ -177,6 +185,7 @@
 				DBAC188216BA976A0026A918 /* CGViewController.xib in Resources */,
 				DB1FBB8916BC03B10009BE00 /* Shimane.jpg in Resources */,
 				DB1FBB8B16BC03BE0009BE00 /* Tokyo.jpg in Resources */,
+				DB84675316BC7C6900139D49 /* CityController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +200,7 @@
 				DBAC187616BA976A0026A918 /* CGAppDelegate.m in Sources */,
 				DBAC187F16BA976A0026A918 /* CGViewController.m in Sources */,
 				DBAC188E16BAAF470026A918 /* City.m in Sources */,
+				DB84675216BC7C6900139D49 /* CityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

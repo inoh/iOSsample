@@ -9,6 +9,7 @@
 #import "CGViewController.h"
 #import "CGAppDelegate.h"
 #import "City.h"
+#import "CityController.h"
 
 @interface CGViewController ()
 
@@ -51,9 +52,9 @@
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    City *thisCity = [cities objectAtIndex:indexPath.row];
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:thisCity.cityName message:thisCity.cityDescription delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-    [alert show];
+    CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
+    CityController *city = [[CityController alloc] init];
+    [delegate.navController pushViewController:city animated:YES];
     
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
