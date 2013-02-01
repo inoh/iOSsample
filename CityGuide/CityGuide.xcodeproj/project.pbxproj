@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1FBB8916BC03B10009BE00 /* Shimane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB1FBB8816BC03B10009BE00 /* Shimane.jpg */; };
+		DB1FBB8B16BC03BE0009BE00 /* Tokyo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB1FBB8A16BC03BE0009BE00 /* Tokyo.jpg */; };
 		DBAC186616BA976A0026A918 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAC186516BA976A0026A918 /* UIKit.framework */; };
 		DBAC186816BA976A0026A918 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAC186716BA976A0026A918 /* Foundation.framework */; };
 		DBAC186A16BA976A0026A918 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAC186916BA976A0026A918 /* CoreGraphics.framework */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB1FBB8816BC03B10009BE00 /* Shimane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shimane.jpg; sourceTree = "<group>"; };
+		DB1FBB8A16BC03BE0009BE00 /* Tokyo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tokyo.jpg; sourceTree = "<group>"; };
 		DBAC186116BA976A0026A918 /* CityGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAC186516BA976A0026A918 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DBAC186716BA976A0026A918 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +105,8 @@
 		DBAC186C16BA976A0026A918 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DB1FBB8A16BC03BE0009BE00 /* Tokyo.jpg */,
+				DB1FBB8816BC03B10009BE00 /* Shimane.jpg */,
 				DBAC186D16BA976A0026A918 /* CityGuide-Info.plist */,
 				DBAC186E16BA976A0026A918 /* InfoPlist.strings */,
 				DBAC187116BA976A0026A918 /* main.m */,
@@ -169,6 +175,8 @@
 				DBAC187A16BA976A0026A918 /* Default@2x.png in Resources */,
 				DBAC187C16BA976A0026A918 /* Default-568h@2x.png in Resources */,
 				DBAC188216BA976A0026A918 /* CGViewController.xib in Resources */,
+				DB1FBB8916BC03B10009BE00 /* Shimane.jpg in Resources */,
+				DB1FBB8B16BC03BE0009BE00 /* Tokyo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
