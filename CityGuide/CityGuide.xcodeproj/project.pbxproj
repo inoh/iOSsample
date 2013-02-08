@@ -96,15 +96,15 @@
 			isa = PBXGroup;
 			children = (
 				DBAC187416BA976A0026A918 /* CGAppDelegate.h */,
+				DBAC187516BA976A0026A918 /* CGAppDelegate.m */,
 				DB84674F16BC7C6900139D49 /* CityController.h */,
 				DB84675016BC7C6900139D49 /* CityController.m */,
-				DB84675116BC7C6900139D49 /* CityController.xib */,
-				DBAC187516BA976A0026A918 /* CGAppDelegate.m */,
 				DBAC187D16BA976A0026A918 /* CGViewController.h */,
 				DBAC187E16BA976A0026A918 /* CGViewController.m */,
-				DBAC188016BA976A0026A918 /* CGViewController.xib */,
 				DBAC188C16BAAF470026A918 /* City.h */,
 				DBAC188D16BAAF470026A918 /* City.m */,
+				DB84675116BC7C6900139D49 /* CityController.xib */,
+				DBAC188016BA976A0026A918 /* CGViewController.xib */,
 				DBAC186C16BA976A0026A918 /* Supporting Files */,
 			);
 			path = CityGuide;
