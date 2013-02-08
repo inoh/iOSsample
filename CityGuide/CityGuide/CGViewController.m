@@ -85,6 +85,17 @@
     return count;
 }
 
+/*
+ * 編集モード時で、Delete、Insertされた時に呼び出される
+ */
+- (void)tableView:(UITableView *)tv commitEditingStyle:(UITableViewCellEditingStyle)editing forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editing == UITableViewCellEditingStyleDelete) {
+        [cities removeObjectAtIndex:indexPath.row];
+        [tv deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }
+}
+
 #pragma mark UITableViewDelegate Methods
 
 /*
