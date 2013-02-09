@@ -10,6 +10,7 @@
 #import "CGAppDelegate.h"
 #import "City.h"
 #import "CityController.h"
+#import "AddCityController.h"
 
 @interface CGViewController ()
 
@@ -42,12 +43,24 @@
     if (editing != self.editing) {
         [super setEditing:editing animated:animated];
         [self.tableView setEditing:editing animated:animated];
-        
-        NSArray *indexes = [NSArray arrayWithObject:[NSIndexPath indexPathForItem:cities.count inSection:0]];
+
+        NSMutableArray *indices = [[NSMutableArray alloc] init];
+        for (int i=0; i < cities.count; i++) {
+            [indices addObject:[NSIndexPath indexPathForRow:i inSection:0]];
+        }
+        NSArray *lastIndex = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:cities.count inSection:0]];
         if (editing == YES) {
-            [self.tableView insertRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+            for (int i=0; i < cities.count; i++) {
+                UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[indices objectAtIndex:i]];
+                [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            }
+            [self.tableView insertRowsAtIndexPaths:lastIndex withRowAnimation:UITableViewRowAnimationLeft];
         } else {
-            [self.tableView deleteRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+            for (int i=0; i < cities.count; i++) {
+                UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[indices objectAtIndex:i]];
+                [cell setSelectionStyle:UITableViewCellSelectionStyleBlue];
+            }
+            [self.tableView deleteRowsAtIndexPaths:lastIndex withRowAnimation:UITableViewRowAnimationLeft];
         }
     }
 }
@@ -104,9 +117,17 @@
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
-    CityController *city = [[CityController alloc] initWithIndexPath:indexPath];
-    [delegate.navController pushViewController:city animated:YES];
-    
+    // 編集時の処理
+    if (indexPath.row < cities.count && !self.editing) {
+        CityController *city = [[CityController alloc] initWithIndexPath:indexPath];
+        [delegate.navController pushViewController:city animated:YES];
+    }
+
+    // 新規時の処理
+    if (indexPath.row == cities.count && self.editing) {
+        AddCityController *addCity = [[AddCityController alloc] init];
+        [delegate.navController pushViewController:addCity animated:YES];
+    }
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
