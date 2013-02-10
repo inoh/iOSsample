@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBCEC3D416C7EF29005D311C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCEC3D316C7EF29005D311C /* UIKit.framework */; };
+		DBCEC3D616C7EF29005D311C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCEC3D516C7EF29005D311C /* Foundation.framework */; };
+		DBCEC3D816C7EF29005D311C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCEC3D716C7EF29005D311C /* CoreGraphics.framework */; };
+		DBCEC3DE16C7EF29005D311C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBCEC3DC16C7EF29005D311C /* InfoPlist.strings */; };
+		DBCEC3E016C7EF29005D311C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEC3DF16C7EF29005D311C /* main.m */; };
+		DBCEC3E416C7EF29005D311C /* BMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEC3E316C7EF29005D311C /* BMAppDelegate.m */; };
+		DBCEC3E616C7EF29005D311C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCEC3E516C7EF29005D311C /* Default.png */; };
+		DBCEC3E816C7EF29005D311C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCEC3E716C7EF29005D311C /* Default@2x.png */; };
+		DBCEC3EA16C7EF29005D311C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCEC3E916C7EF29005D311C /* Default-568h@2x.png */; };
+		DBCEC3ED16C7EF29005D311C /* BMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEC3EC16C7EF29005D311C /* BMMainViewController.m */; };
+		DBCEC3F016C7EF29005D311C /* BMFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEC3EF16C7EF29005D311C /* BMFlipsideViewController.m */; };
+		DBCEC3F316C7EF29005D311C /* BMMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCEC3F116C7EF29005D311C /* BMMainViewController.xib */; };
+		DBCEC3F616C7EF29005D311C /* BMFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCEC3F416C7EF29005D311C /* BMFlipsideViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DBCEC3CF16C7EF29005D311C /* BatteryMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBCEC3D316C7EF29005D311C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBCEC3D516C7EF29005D311C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBCEC3D716C7EF29005D311C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DBCEC3DB16C7EF29005D311C /* BatteryMonitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BatteryMonitor-Info.plist"; sourceTree = "<group>"; };
+		DBCEC3DD16C7EF29005D311C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBCEC3DF16C7EF29005D311C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBCEC3E116C7EF29005D311C /* BatteryMonitor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BatteryMonitor-Prefix.pch"; sourceTree = "<group>"; };
+		DBCEC3E216C7EF29005D311C /* BMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMAppDelegate.h; sourceTree = "<group>"; };
+		DBCEC3E316C7EF29005D311C /* BMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMAppDelegate.m; sourceTree = "<group>"; };
+		DBCEC3E516C7EF29005D311C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DBCEC3E716C7EF29005D311C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DBCEC3E916C7EF29005D311C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DBCEC3EB16C7EF29005D311C /* BMMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMMainViewController.h; sourceTree = "<group>"; };
+		DBCEC3EC16C7EF29005D311C /* BMMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMMainViewController.m; sourceTree = "<group>"; };
+		DBCEC3EE16C7EF29005D311C /* BMFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMFlipsideViewController.h; sourceTree = "<group>"; };
+		DBCEC3EF16C7EF29005D311C /* BMFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMFlipsideViewController.m; sourceTree = "<group>"; };
+		DBCEC3F216C7EF29005D311C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BMMainViewController.xib; sourceTree = "<group>"; };
+		DBCEC3F516C7EF29005D311C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BMFlipsideViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBCEC3CC16C7EF29005D311C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCEC3D416C7EF29005D311C /* UIKit.framework in Frameworks */,
+				DBCEC3D616C7EF29005D311C /* Foundation.framework in Frameworks */,
+				DBCEC3D816C7EF29005D311C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBCEC3C416C7EF29005D311C = {
+			isa = PBXGroup;
+			children = (
+				DBCEC3D916C7EF29005D311C /* BatteryMonitor */,
+				DBCEC3D216C7EF29005D311C /* Frameworks */,
+				DBCEC3D016C7EF29005D311C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBCEC3D016C7EF29005D311C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBCEC3CF16C7EF29005D311C /* BatteryMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBCEC3D216C7EF29005D311C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBCEC3D316C7EF29005D311C /* UIKit.framework */,
+				DBCEC3D516C7EF29005D311C /* Foundation.framework */,
+				DBCEC3D716C7EF29005D311C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBCEC3D916C7EF29005D311C /* BatteryMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				DBCEC3E216C7EF29005D311C /* BMAppDelegate.h */,
+				DBCEC3E316C7EF29005D311C /* BMAppDelegate.m */,
+				DBCEC3EB16C7EF29005D311C /* BMMainViewController.h */,
+				DBCEC3EC16C7EF29005D311C /* BMMainViewController.m */,
+				DBCEC3EE16C7EF29005D311C /* BMFlipsideViewController.h */,
+				DBCEC3EF16C7EF29005D311C /* BMFlipsideViewController.m */,
+				DBCEC3F116C7EF29005D311C /* BMMainViewController.xib */,
+				DBCEC3F416C7EF29005D311C /* BMFlipsideViewController.xib */,
+				DBCEC3DA16C7EF29005D311C /* Supporting Files */,
+			);
+			path = BatteryMonitor;
+			sourceTree = "<group>";
+		};
+		DBCEC3DA16C7EF29005D311C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBCEC3DB16C7EF29005D311C /* BatteryMonitor-Info.plist */,
+				DBCEC3DC16C7EF29005D311C /* InfoPlist.strings */,
+				DBCEC3DF16C7EF29005D311C /* main.m */,
+				DBCEC3E116C7EF29005D311C /* BatteryMonitor-Prefix.pch */,
+				DBCEC3E516C7EF29005D311C /* Default.png */,
+				DBCEC3E716C7EF29005D311C /* Default@2x.png */,
+				DBCEC3E916C7EF29005D311C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBCEC3CE16C7EF29005D311C /* BatteryMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBCEC3F916C7EF29005D311C /* Build configuration list for PBXNativeTarget "BatteryMonitor" */;
+			buildPhases = (
+				DBCEC3CB16C7EF29005D311C /* Sources */,
+				DBCEC3CC16C7EF29005D311C /* Frameworks */,
+				DBCEC3CD16C7EF29005D311C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatteryMonitor;
+			productName = BatteryMonitor;
+			productReference = DBCEC3CF16C7EF29005D311C /* BatteryMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBCEC3C616C7EF29005D311C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "井上　裕之";
+			};
+			buildConfigurationList = DBCEC3C916C7EF29005D311C /* Build configuration list for PBXProject "BatteryMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DBCEC3C416C7EF29005D311C;
+			productRefGroup = DBCEC3D016C7EF29005D311C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBCEC3CE16C7EF29005D311C /* BatteryMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBCEC3CD16C7EF29005D311C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCEC3DE16C7EF29005D311C /* InfoPlist.strings in Resources */,
+				DBCEC3E616C7EF29005D311C /* Default.png in Resources */,
+				DBCEC3E816C7EF29005D311C /* Default@2x.png in Resources */,
+				DBCEC3EA16C7EF29005D311C /* Default-568h@2x.png in Resources */,
+				DBCEC3F316C7EF29005D311C /* BMMainViewController.xib in Resources */,
+				DBCEC3F616C7EF29005D311C /* BMFlipsideViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBCEC3CB16C7EF29005D311C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCEC3E016C7EF29005D311C /* main.m in Sources */,
+				DBCEC3E416C7EF29005D311C /* BMAppDelegate.m in Sources */,
+				DBCEC3ED16C7EF29005D311C /* BMMainViewController.m in Sources */,
+				DBCEC3F016C7EF29005D311C /* BMFlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBCEC3DC16C7EF29005D311C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBCEC3DD16C7EF29005D311C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBCEC3F116C7EF29005D311C /* BMMainViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBCEC3F216C7EF29005D311C /* en */,
+			);
+			name = BMMainViewController.xib;
+			sourceTree = "<group>";
+		};
+		DBCEC3F416C7EF29005D311C /* BMFlipsideViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBCEC3F516C7EF29005D311C /* en */,
+			);
+			name = BMFlipsideViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBCEC3F716C7EF29005D311C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBCEC3F816C7EF29005D311C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBCEC3FA16C7EF29005D311C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BatteryMonitor/BatteryMonitor-Prefix.pch";
+				INFOPLIST_FILE = "BatteryMonitor/BatteryMonitor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DBCEC3FB16C7EF29005D311C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BatteryMonitor/BatteryMonitor-Prefix.pch";
+				INFOPLIST_FILE = "BatteryMonitor/BatteryMonitor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBCEC3C916C7EF29005D311C /* Build configuration list for PBXProject "BatteryMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBCEC3F716C7EF29005D311C /* Debug */,
+				DBCEC3F816C7EF29005D311C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBCEC3F916C7EF29005D311C /* Build configuration list for PBXNativeTarget "BatteryMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBCEC3FA16C7EF29005D311C /* Debug */,
+				DBCEC3FB16C7EF29005D311C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBCEC3C616C7EF29005D311C /* Project object */;
+}
