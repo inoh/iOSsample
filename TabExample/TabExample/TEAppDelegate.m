@@ -7,10 +7,9 @@
 //
 
 #import "TEAppDelegate.h"
-
 #import "TEFirstViewController.h"
-
 #import "TESecondViewController.h"
+#import "TEThirdViewController.h"
 
 @implementation TEAppDelegate
 
@@ -20,8 +19,9 @@
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[TEFirstViewController alloc] initWithNibName:@"TEFirstViewController" bundle:nil];
     UIViewController *viewController2 = [[TESecondViewController alloc] initWithNibName:@"TESecondViewController" bundle:nil];
+    UIViewController *viewController3 = [[TEThirdViewController alloc] initWithNibName:@"TEThirdViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

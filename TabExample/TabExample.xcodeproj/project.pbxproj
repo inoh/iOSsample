@@ -24,6 +24,8 @@
 		DB036B4216C8D52D00002440 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB036B4116C8D52D00002440 /* second@2x.png */; };
 		DB036B4516C8D52D00002440 /* TEFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB036B4316C8D52D00002440 /* TEFirstViewController.xib */; };
 		DB036B4816C8D52D00002440 /* TESecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB036B4616C8D52D00002440 /* TESecondViewController.xib */; };
+		DB036B5116C8D7C400002440 /* TEThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB036B4F16C8D7C400002440 /* TEThirdViewController.m */; };
+		DB036B5216C8D7C400002440 /* TEThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB036B5016C8D7C400002440 /* TEThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,9 @@
 		DB036B4116C8D52D00002440 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		DB036B4416C8D52D00002440 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TEFirstViewController.xib; sourceTree = "<group>"; };
 		DB036B4716C8D52D00002440 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TESecondViewController.xib; sourceTree = "<group>"; };
+		DB036B4E16C8D7C400002440 /* TEThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEThirdViewController.h; path = ../TEThirdViewController.h; sourceTree = "<group>"; };
+		DB036B4F16C8D7C400002440 /* TEThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEThirdViewController.m; path = ../TEThirdViewController.m; sourceTree = "<group>"; };
+		DB036B5016C8D7C400002440 /* TEThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TEThirdViewController.xib; path = ../TEThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +105,17 @@
 				DB036B2D16C8D52D00002440 /* TEAppDelegate.m */,
 				DB036B3516C8D52D00002440 /* TEFirstViewController.h */,
 				DB036B3616C8D52D00002440 /* TEFirstViewController.m */,
-				DB036B3816C8D52D00002440 /* first.png */,
-				DB036B3A16C8D52D00002440 /* first@2x.png */,
 				DB036B3C16C8D52D00002440 /* TESecondViewController.h */,
 				DB036B3D16C8D52D00002440 /* TESecondViewController.m */,
+				DB036B4E16C8D7C400002440 /* TEThirdViewController.h */,
+				DB036B4F16C8D7C400002440 /* TEThirdViewController.m */,
+				DB036B3816C8D52D00002440 /* first.png */,
+				DB036B3A16C8D52D00002440 /* first@2x.png */,
 				DB036B3F16C8D52D00002440 /* second.png */,
 				DB036B4116C8D52D00002440 /* second@2x.png */,
 				DB036B4316C8D52D00002440 /* TEFirstViewController.xib */,
 				DB036B4616C8D52D00002440 /* TESecondViewController.xib */,
+				DB036B5016C8D7C400002440 /* TEThirdViewController.xib */,
 				DB036B2416C8D52D00002440 /* Supporting Files */,
 			);
 			path = TabExample;
@@ -189,6 +197,7 @@
 				DB036B4216C8D52D00002440 /* second@2x.png in Resources */,
 				DB036B4516C8D52D00002440 /* TEFirstViewController.xib in Resources */,
 				DB036B4816C8D52D00002440 /* TESecondViewController.xib in Resources */,
+				DB036B5216C8D7C400002440 /* TEThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +212,7 @@
 				DB036B2E16C8D52D00002440 /* TEAppDelegate.m in Sources */,
 				DB036B3716C8D52D00002440 /* TEFirstViewController.m in Sources */,
 				DB036B3E16C8D52D00002440 /* TESecondViewController.m in Sources */,
+				DB036B5116C8D7C400002440 /* TEThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
