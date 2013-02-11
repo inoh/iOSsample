@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB036B1E16C8D52D00002440 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB036B1D16C8D52D00002440 /* UIKit.framework */; };
+		DB036B2016C8D52D00002440 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB036B1F16C8D52D00002440 /* Foundation.framework */; };
+		DB036B2216C8D52D00002440 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB036B2116C8D52D00002440 /* CoreGraphics.framework */; };
+		DB036B2816C8D52D00002440 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB036B2616C8D52D00002440 /* InfoPlist.strings */; };
+		DB036B2A16C8D52D00002440 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB036B2916C8D52D00002440 /* main.m */; };
+		DB036B2E16C8D52D00002440 /* TEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB036B2D16C8D52D00002440 /* TEAppDelegate.m */; };
+		DB036B3016C8D52D00002440 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DB036B2F16C8D52D00002440 /* Default.png */; };
+		DB036B3216C8D52D00002440 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB036B3116C8D52D00002440 /* Default@2x.png */; };
+		DB036B3416C8D52D00002440 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB036B3316C8D52D00002440 /* Default-568h@2x.png */; };
+		DB036B3716C8D52D00002440 /* TEFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB036B3616C8D52D00002440 /* TEFirstViewController.m */; };
+		DB036B3916C8D52D00002440 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = DB036B3816C8D52D00002440 /* first.png */; };
+		DB036B3B16C8D52D00002440 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB036B3A16C8D52D00002440 /* first@2x.png */; };
+		DB036B3E16C8D52D00002440 /* TESecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB036B3D16C8D52D00002440 /* TESecondViewController.m */; };
+		DB036B4016C8D52D00002440 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DB036B3F16C8D52D00002440 /* second.png */; };
+		DB036B4216C8D52D00002440 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB036B4116C8D52D00002440 /* second@2x.png */; };
+		DB036B4516C8D52D00002440 /* TEFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB036B4316C8D52D00002440 /* TEFirstViewController.xib */; };
+		DB036B4816C8D52D00002440 /* TESecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB036B4616C8D52D00002440 /* TESecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB036B1916C8D52D00002440 /* TabExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB036B1D16C8D52D00002440 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DB036B1F16C8D52D00002440 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB036B2116C8D52D00002440 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB036B2516C8D52D00002440 /* TabExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabExample-Info.plist"; sourceTree = "<group>"; };
+		DB036B2716C8D52D00002440 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB036B2916C8D52D00002440 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB036B2B16C8D52D00002440 /* TabExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabExample-Prefix.pch"; sourceTree = "<group>"; };
+		DB036B2C16C8D52D00002440 /* TEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEAppDelegate.h; sourceTree = "<group>"; };
+		DB036B2D16C8D52D00002440 /* TEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEAppDelegate.m; sourceTree = "<group>"; };
+		DB036B2F16C8D52D00002440 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DB036B3116C8D52D00002440 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DB036B3316C8D52D00002440 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DB036B3516C8D52D00002440 /* TEFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEFirstViewController.h; sourceTree = "<group>"; };
+		DB036B3616C8D52D00002440 /* TEFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEFirstViewController.m; sourceTree = "<group>"; };
+		DB036B3816C8D52D00002440 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		DB036B3A16C8D52D00002440 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		DB036B3C16C8D52D00002440 /* TESecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESecondViewController.h; sourceTree = "<group>"; };
+		DB036B3D16C8D52D00002440 /* TESecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TESecondViewController.m; sourceTree = "<group>"; };
+		DB036B3F16C8D52D00002440 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		DB036B4116C8D52D00002440 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		DB036B4416C8D52D00002440 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TEFirstViewController.xib; sourceTree = "<group>"; };
+		DB036B4716C8D52D00002440 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TESecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB036B1616C8D52D00002440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB036B1E16C8D52D00002440 /* UIKit.framework in Frameworks */,
+				DB036B2016C8D52D00002440 /* Foundation.framework in Frameworks */,
+				DB036B2216C8D52D00002440 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB036B0E16C8D52D00002440 = {
+			isa = PBXGroup;
+			children = (
+				DB036B2316C8D52D00002440 /* TabExample */,
+				DB036B1C16C8D52D00002440 /* Frameworks */,
+				DB036B1A16C8D52D00002440 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB036B1A16C8D52D00002440 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB036B1916C8D52D00002440 /* TabExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB036B1C16C8D52D00002440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB036B1D16C8D52D00002440 /* UIKit.framework */,
+				DB036B1F16C8D52D00002440 /* Foundation.framework */,
+				DB036B2116C8D52D00002440 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB036B2316C8D52D00002440 /* TabExample */ = {
+			isa = PBXGroup;
+			children = (
+				DB036B2C16C8D52D00002440 /* TEAppDelegate.h */,
+				DB036B2D16C8D52D00002440 /* TEAppDelegate.m */,
+				DB036B3516C8D52D00002440 /* TEFirstViewController.h */,
+				DB036B3616C8D52D00002440 /* TEFirstViewController.m */,
+				DB036B3816C8D52D00002440 /* first.png */,
+				DB036B3A16C8D52D00002440 /* first@2x.png */,
+				DB036B3C16C8D52D00002440 /* TESecondViewController.h */,
+				DB036B3D16C8D52D00002440 /* TESecondViewController.m */,
+				DB036B3F16C8D52D00002440 /* second.png */,
+				DB036B4116C8D52D00002440 /* second@2x.png */,
+				DB036B4316C8D52D00002440 /* TEFirstViewController.xib */,
+				DB036B4616C8D52D00002440 /* TESecondViewController.xib */,
+				DB036B2416C8D52D00002440 /* Supporting Files */,
+			);
+			path = TabExample;
+			sourceTree = "<group>";
+		};
+		DB036B2416C8D52D00002440 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB036B2516C8D52D00002440 /* TabExample-Info.plist */,
+				DB036B2616C8D52D00002440 /* InfoPlist.strings */,
+				DB036B2916C8D52D00002440 /* main.m */,
+				DB036B2B16C8D52D00002440 /* TabExample-Prefix.pch */,
+				DB036B2F16C8D52D00002440 /* Default.png */,
+				DB036B3116C8D52D00002440 /* Default@2x.png */,
+				DB036B3316C8D52D00002440 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB036B1816C8D52D00002440 /* TabExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB036B4B16C8D52D00002440 /* Build configuration list for PBXNativeTarget "TabExample" */;
+			buildPhases = (
+				DB036B1516C8D52D00002440 /* Sources */,
+				DB036B1616C8D52D00002440 /* Frameworks */,
+				DB036B1716C8D52D00002440 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabExample;
+			productName = TabExample;
+			productReference = DB036B1916C8D52D00002440 /* TabExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB036B1016C8D52D00002440 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TE;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Hiroyuki Inoue";
+			};
+			buildConfigurationList = DB036B1316C8D52D00002440 /* Build configuration list for PBXProject "TabExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB036B0E16C8D52D00002440;
+			productRefGroup = DB036B1A16C8D52D00002440 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB036B1816C8D52D00002440 /* TabExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB036B1716C8D52D00002440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB036B2816C8D52D00002440 /* InfoPlist.strings in Resources */,
+				DB036B3016C8D52D00002440 /* Default.png in Resources */,
+				DB036B3216C8D52D00002440 /* Default@2x.png in Resources */,
+				DB036B3416C8D52D00002440 /* Default-568h@2x.png in Resources */,
+				DB036B3916C8D52D00002440 /* first.png in Resources */,
+				DB036B3B16C8D52D00002440 /* first@2x.png in Resources */,
+				DB036B4016C8D52D00002440 /* second.png in Resources */,
+				DB036B4216C8D52D00002440 /* second@2x.png in Resources */,
+				DB036B4516C8D52D00002440 /* TEFirstViewController.xib in Resources */,
+				DB036B4816C8D52D00002440 /* TESecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB036B1516C8D52D00002440 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB036B2A16C8D52D00002440 /* main.m in Sources */,
+				DB036B2E16C8D52D00002440 /* TEAppDelegate.m in Sources */,
+				DB036B3716C8D52D00002440 /* TEFirstViewController.m in Sources */,
+				DB036B3E16C8D52D00002440 /* TESecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB036B2616C8D52D00002440 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB036B2716C8D52D00002440 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DB036B4316C8D52D00002440 /* TEFirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB036B4416C8D52D00002440 /* en */,
+			);
+			name = TEFirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		DB036B4616C8D52D00002440 /* TESecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB036B4716C8D52D00002440 /* en */,
+			);
+			name = TESecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB036B4916C8D52D00002440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB036B4A16C8D52D00002440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB036B4C16C8D52D00002440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabExample/TabExample-Prefix.pch";
+				INFOPLIST_FILE = "TabExample/TabExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DB036B4D16C8D52D00002440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabExample/TabExample-Prefix.pch";
+				INFOPLIST_FILE = "TabExample/TabExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB036B1316C8D52D00002440 /* Build configuration list for PBXProject "TabExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB036B4916C8D52D00002440 /* Debug */,
+				DB036B4A16C8D52D00002440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB036B4B16C8D52D00002440 /* Build configuration list for PBXNativeTarget "TabExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB036B4C16C8D52D00002440 /* Debug */,
+				DB036B4D16C8D52D00002440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB036B1016C8D52D00002440 /* Project object */;
+}

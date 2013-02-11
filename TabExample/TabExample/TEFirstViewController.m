@@ -1,0 +1,39 @@
+//
+//  TEFirstViewController.m
+//  TabExample
+//
+//  Created by 井上　裕之 on 2013/02/11.
+//  Copyright (c) 2013年 Hiroyuki Inoue. All rights reserved.
+//
+
+#import "TEFirstViewController.h"
+
+@interface TEFirstViewController ()
+
+@end
+
+@implementation TEFirstViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = NSLocalizedString(@"First", @"First");
+        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+    }
+    return self;
+}
+							
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end
