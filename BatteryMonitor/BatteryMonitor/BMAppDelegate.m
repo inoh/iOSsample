@@ -12,8 +12,12 @@
 
 @implementation BMAppDelegate
 
+/*
+ * はじめての起動時に呼び出される
+ */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.monitorBattery = NO;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.mainViewController = [[BMMainViewController alloc] initWithNibName:@"BMMainViewController" bundle:nil];

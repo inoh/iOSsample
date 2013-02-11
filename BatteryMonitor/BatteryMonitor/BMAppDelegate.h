@@ -13,7 +13,8 @@
 @interface BMAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) BMMainViewController *mainViewController;
+
+@property (nonatomic) BOOL monitorBattery;
 
 @end
