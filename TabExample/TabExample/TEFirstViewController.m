@@ -7,6 +7,8 @@
 //
 
 #import "TEFirstViewController.h"
+#import "TEAppDelegate.h"
+#import "SimpleView.h"
 
 @interface TEFirstViewController ()
 
@@ -57,6 +59,12 @@
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // sharedApplicationメソッドはアプリケーションインスタンスを返す。
+    // UIApplicationはアプリケーション全体を管理するクラスで、１アプリケーションには必ず１つしか存在しない。
+    TEAppDelegate *delegate = (TEAppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIViewController *controller = [[SimpleView alloc] initWithNibName:@"SimpleView" bundle:nil];
+    [delegate.navController pushViewController:controller animated:YES];
+    
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
