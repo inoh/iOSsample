@@ -20,8 +20,14 @@
     UIViewController *viewController1 = [[TEFirstViewController alloc] initWithNibName:@"TEFirstViewController" bundle:nil];
     UIViewController *viewController2 = [[TESecondViewController alloc] initWithNibName:@"TESecondViewController" bundle:nil];
     UIViewController *viewController3 = [[TEThirdViewController alloc] initWithNibName:@"TEThirdViewController" bundle:nil];
+    
+    self.navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    self.navController.navigationBar.barStyle = UIBarStyleBlack;
+    
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3];
+
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:self.navController, viewController2, viewController3, nil];
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
