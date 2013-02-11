@@ -27,12 +27,27 @@
     self.title = @"City Guide"; // ビューのヘッダーに表示する文字
     CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
     cities = delegate.cities;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addCity:)];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)addCity:(id)sender
+{
+    AddCityController *addCity = [[AddCityController alloc] init];
+    [self presentModalViewController:addCity animated:YES];
+}
+
+- (void) tableView:(UITableView *)tv commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.editing == UITableViewCellEditingStyleDelete) {
+        [cities removeObjectAtIndex:indexPath.row];
+        [tv deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }
 }
 
 #pragma mark UITableViewDataSource Methods

@@ -15,4 +15,6 @@
     IBOutlet UITableViewCell *descriptionCell;
 }
 
+- (IBAction)saveCity:(id)sender;
+
 @end
