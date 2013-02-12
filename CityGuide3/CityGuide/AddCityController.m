@@ -52,12 +52,18 @@
     [super viewDidLoad];
     self.title = @"New City";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveCity:)];
+    cityPicture = [UIImage imageNamed:@"QuestionMark.jpg"];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)addPicture:(id)sender
+{
+    NSLog(@"addPicture: called.");
 }
 
 #pragma mark UITableViewDataSource Methods
@@ -67,6 +73,10 @@
     UITableViewCell *cell = nil;
     if (indexPath.row == 0) {
         cell = nameCell;
+    } else if (indexPath.row == 1) {
+        UIImageView *pictureView = (UIImageView *)[pictureCell viewWithTag:777];
+        pictureView.image = cityPicture;
+        cell = pictureCell;
     } else {
         cell = descriptionCell;
     }
@@ -75,7 +85,7 @@
 
 - (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 3;
 }
 
 #pragma mark UITableViewDelegate Methods
@@ -88,8 +98,10 @@
     CGFloat height;
     if (indexPath.row == 0) {
         height = 44;
+    } else if (indexPath.row == 1) {
+        height = 83;
     } else {
-        height = 362;
+        height = 279;
     }
     return height;
 }

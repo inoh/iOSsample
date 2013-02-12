@@ -13,6 +13,11 @@
     IBOutlet UITableView *tableView;
     IBOutlet UITableViewCell *nameCell;
     IBOutlet UITableViewCell *descriptionCell;
+    IBOutlet UITableViewCell *pictureCell;
+    
+    UIImage *cityPicture;
 }
+
+- (IBAction)addPicture:(id)sender;
 
 @end
