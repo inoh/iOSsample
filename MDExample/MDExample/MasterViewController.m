@@ -65,7 +65,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return 5;
 }
 
 // Customize the appearance of table view cells.
@@ -82,8 +82,7 @@
     }
 
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    cell.textLabel.text = [NSString stringWithFormat:@"Row = %d", indexPath.row];
     return cell;
 }
 
@@ -125,11 +124,12 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
 	    if (!self.detailViewController) {
 	        self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPhone" bundle:nil];
+            [self.detailViewController setDetailItem:indexPath];
 	    }
 	    self.detailViewController.detailItem = object;
         [self.navigationController pushViewController:self.detailViewController animated:YES];
     } else {
-        self.detailViewController.detailItem = object;
+        [(DetailViewController *)[(UINavigationController *)[self.splitViewController.viewControllers objectAtIndex:1] visibleViewController] setDetailItem:indexPath];
     }
 }
 
