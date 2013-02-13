@@ -39,6 +39,7 @@
         newCity.cityName = nameEntry.text;
         newCity.cityDescription = descriptionEntry.text;
         newCity.cityPicture = nil;
+        newCity.cityPicture = cityPicture;
         [cities addObject:newCity];
         
         CGViewController *viewController = delegate.viewController;
@@ -52,7 +53,12 @@
     [super viewDidLoad];
     self.title = @"New City";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveCity:)];
-    cityPicture = [UIImage imageNamed:@"QuestionMark.jpg"];
+    cityPicture = [UIImage imageNamed:@"Tokyo.jpg"];
+    
+    pickerController = [[UIImagePickerController alloc] init];
+    pickerController.allowsEditing = NO;
+    pickerController.delegate = self;
+    pickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,7 +69,20 @@
 
 - (IBAction)addPicture:(id)sender
 {
-    NSLog(@"addPicture: called.");
+    UITextField *nameEntry = (UITextField *)[nameCell viewWithTag:777];
+    [nameEntry resignFirstResponder];
+    
+    [self presentModalViewController:pictureCell animated:YES];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    [self dismissModalViewControllerAnimated:YES];
+    cityPicture = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    
+    UIImageView *pictureView = (UIImageView *)[pictureCell viewWithTag:777];
+    pictureView.image = cityPicture;
+    [tableView reloadData];
 }
 
 #pragma mark UITableViewDataSource Methods

@@ -16,6 +16,7 @@
     IBOutlet UITableViewCell *pictureCell;
     
     UIImage *cityPicture;
+    UIImagePickerController *pickerController;
 }
 
 - (IBAction)addPicture:(id)sender;
