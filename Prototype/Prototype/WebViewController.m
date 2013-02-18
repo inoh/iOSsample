@@ -63,4 +63,29 @@
     [webView stopLoading];
 }
 
+- (void)weViewDidStartLoad:(UIWebView *)wv
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)wv
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
+
+- (void)webView:(UIWebView *)wv didFailLoadWithError:(NSError *)error
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    
+    NSString *errorString = [error localizedDescription];
+    NSString *errorTitle = [NSString stringWithFormat:@"Error (%d)", error.code];
+    UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:errorTitle message:errorString delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [errorView show];
+}
+
+- (void)didPresentAlertView:(UIAlertView *)alertView
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 @end
